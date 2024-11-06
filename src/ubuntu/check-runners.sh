@@ -3,7 +3,7 @@
 # 定义计时器的时间长度 (秒)
 TIMER_DURATION=$1  # 10分钟
 OS=$2
-INTERVAL=60  # 每隔60秒进行检查
+INTERVAL=300  # 每隔60秒进行检查
 ORG_NAME="RenGamesTeam"  # 组织名称
 
 # 定义GitHub API请求的URL
@@ -11,7 +11,7 @@ API_URL="https://api.github.com/orgs/$ORG_NAME/actions/runners"
 
 # 等待120秒(等待Runner运行)
 echo "Waiting for 120 seconds before starting the timer..."
-sleep 120
+sleep 180
 
 # 退出标识符
 exit_flag=false
